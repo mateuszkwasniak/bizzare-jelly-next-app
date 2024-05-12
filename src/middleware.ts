@@ -7,7 +7,7 @@ const allowedOrigns = [
   "https://bizzare-jelly.vercel.app",
 ];
 
-const protectedRoutes = ["/dashboard", "/auth/login"];
+const protectedRoutes = ["/dashboard", "/dashboard/:path*", "/auth/login"];
 
 export async function middleware(request: NextRequest) {
   const origin = request.headers.get("origin");

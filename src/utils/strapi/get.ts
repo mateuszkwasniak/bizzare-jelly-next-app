@@ -23,20 +23,16 @@ const baseFetch = async (
 
     if (response?.ok) {
       const data = await response.json();
-      // return { data };
+
       return { data, error: "" };
     } else {
       const { error } = await response.json();
       if (error?.status === 401) {
         return { data: undefined, error: "401" };
-        // } else throw new Error(error?.message);
       }
       return { data: undefined, error: error?.message };
     }
   } catch (error: any) {
-    // if (error?.message === "401") {
-    //   throw new Error("401");
-    // } else throw new Error(error?.message || "Unable to fetch data");
     return { data: undefined, error: "Unable to fetch data." };
   }
 };

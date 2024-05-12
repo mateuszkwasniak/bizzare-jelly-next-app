@@ -30,7 +30,6 @@ const baseStrapiPost = async (
       return { data: undefined, error: error?.message };
     }
   } catch (error: any) {
-  
     return { data: undefined, error: "Unable to send data." };
   }
 };
@@ -174,8 +173,6 @@ export const createOrder = async (
     "",
     { Authorization: `Bearer ${token}` }
   );
-
-  throw new Error("blbllbblelbleb!");
 
   return response;
 };
