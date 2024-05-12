@@ -25,16 +25,12 @@ const baseStrapiPost = async (
     } else {
       const { error } = await response.json();
       if (error?.status === 401) {
-        // throw new Error("401");
         return { data: undefined, error: "401" };
       }
       return { data: undefined, error: error?.message };
-      // throw new Error(error?.message);
     }
   } catch (error: any) {
-    // if (error?.message === "401") {
-    //   throw new Error("401");
-    // }
+  
     return { data: undefined, error: "Unable to send data." };
   }
 };

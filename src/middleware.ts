@@ -4,10 +4,9 @@ import { verify } from "./utils/jwt";
 
 const allowedOrigns = [
   "http://localhost:3000",
-  // "https://my-website.com",
+  "https://bizzare-jelly.vercel.app",
 ];
 
-// const protectedRoutes = ["/dashboard", "/checkout", "/auth/login"];
 const protectedRoutes = ["/dashboard", "/auth/login"];
 
 export async function middleware(request: NextRequest) {
