@@ -46,7 +46,7 @@ export default async function Footer() {
           className="w-full h-full object-cover absolute left-0 top-0 opacity-75"
         />
         <div className="max-w-[1920px] px-5 md:px-40 flex flex-col items-center justify-center gap-2 z-10">
-          <h2 className="text-center md:text-start font-semibold text-4xl md:text-5xl text-white mb-2">
+          <h2 className="text-center font-semibold text-4xl md:text-5xl text-white mb-2">
             {header}
           </h2>
           <p className="text-center md:text-start text-md md:text-lg text-white mb-8">

@@ -91,7 +91,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="w-full text-white fixed top-0 flex items-center justify-center h-[40px] md:h-[76px] xpy-2 p-2 md:px-5 xl:px-36 2xl:px-56 z-40 bg-white border-b shadow-custom">
+    <div className="w-full text-white fixed top-0 flex items-center justify-center h-[40px] md:h-[76px] p-2 md:px-5 xl:px-36 2xl:px-56 z-40 bg-white border-b shadow-custom">
       <Cart showCart={showCart} setShowCart={setShowCart} />
       <div
         className={`${
