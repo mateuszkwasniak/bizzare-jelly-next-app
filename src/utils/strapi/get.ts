@@ -356,7 +356,6 @@ export const fetchUsersAddresses = async (
   jwt: string | undefined
 ): Promise<{ data?: IShippingAddress[]; error?: string }> => {
   if (!jwt)
-    // throw new Error("Unauthorized access!");
     return {
       data: undefined,
       error: "Unauthorized access!",
