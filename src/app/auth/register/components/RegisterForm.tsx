@@ -156,7 +156,9 @@ export default function RegisterForm() {
         id="username"
         name="username"
         className={`${
-          invalidFormFields?.username ? "border-red-500" : ""
+          invalidFormFields?.username
+            ? "border-red-500"
+            : "border-black-nav md:border-gray-border"
         } border-b pb-4 outline-none bg-transparent scroll-m-32`}
         placeholder="Username"
         value={formValues.username}
@@ -182,7 +184,9 @@ export default function RegisterForm() {
         id="firstName"
         name="firstName"
         className={`${
-          invalidFormFields?.firstName ? "border-red-500" : ""
+          invalidFormFields?.firstName
+            ? "border-red-500"
+            : "border-black-nav md:border-gray-border"
         } border-b pb-4 outline-none bg-transparent scroll-m-32`}
         placeholder="First Name"
         value={formValues.firstName}
@@ -208,7 +212,9 @@ export default function RegisterForm() {
         id="lastName"
         name="lastName"
         className={`${
-          invalidFormFields?.lastName ? "border-red-500" : ""
+          invalidFormFields?.lastName
+            ? "border-red-500"
+            : "border-black-nav md:border-gray-border"
         } border-b pb-4 outline-none bg-transparent scroll-m-32`}
         placeholder="Last Name"
         value={formValues.lastName}
@@ -234,7 +240,9 @@ export default function RegisterForm() {
         id="email"
         name="email"
         className={`${
-          invalidFormFields?.email ? "border-red-500" : ""
+          invalidFormFields?.email
+            ? "border-red-500"
+            : "border-black-nav md:border-gray-border"
         } border-b pb-4 outline-none bg-transparent scroll-m-32`}
         placeholder="Email"
         value={formValues.email}
@@ -260,7 +268,9 @@ export default function RegisterForm() {
         id="password"
         name="password"
         className={`${
-          invalidFormFields?.password ? "border-red-500" : ""
+          invalidFormFields?.password
+            ? "border-red-500"
+            : "border-black-nav md:border-gray-border"
         } border-b pb-4 outline-none bg-transparent scroll-m-32`}
         placeholder="Password"
         value={formValues.password}

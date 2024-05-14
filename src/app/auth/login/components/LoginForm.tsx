@@ -156,7 +156,9 @@ export default function LoginForm() {
           id="identifier"
           name="identifier"
           className={`${
-            invalidFormFields.identifier.invalid ? "border-red-500" : ""
+            invalidFormFields.identifier.invalid
+              ? "border-red-500"
+              : "border-black-nav md:border-gray-border"
           } border-b pb-4 outline-none bg-transparent scroll-m-32`}
           placeholder="Username or email address"
           value={formValues.identifier}
@@ -182,7 +184,9 @@ export default function LoginForm() {
           id="password"
           name="password"
           className={`${
-            invalidFormFields.password.invalid ? "border-red-500" : ""
+            invalidFormFields.password.invalid
+              ? "border-red-500"
+              : "border-black-nav md:border-gray-border"
           } border-b pb-4 outline-none bg-transparent scroll-m-32`}
           placeholder="Password"
           value={formValues.password}
@@ -228,7 +232,7 @@ export default function LoginForm() {
         </div>
         <button
           onClick={() => googleSignIn()}
-          className="ml-0 md:ml-12 py-4 px-16 md:px-4 md:w-20 h-20 relative flex items-center justify-center border border-black-nav md:border-gray-border rounded-full bg-black-header text-white"
+          className="ml-0 md:ml-14 py-4 px-4 md:px-4 relative flex items-center justify-center border border-black-nav md:border-gray-border rounded-full bg-black-header text-white"
         >
           <GrGoogle className="text-4xl text-white" />
         </button>
