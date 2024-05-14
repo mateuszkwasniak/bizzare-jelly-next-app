@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
-import { LuMail } from "react-icons/lu";
 import Link from "next/link";
 import { LuInstagram } from "react-icons/lu";
 import { LuFacebook } from "react-icons/lu";
 import { LuYoutube } from "react-icons/lu";
 
 import { fetchFooterDetails } from "@/utils/strapi/get";
+import FooterNewsletter from "./FooterNewsletter";
 
 const links: { name: string; href: string }[] = [
   { name: "Home", href: "/" },
@@ -36,34 +35,11 @@ export default async function Footer() {
 
   return (
     <footer className="w-full">
-      <div className="h-[360px] 2xl:h-[460px] 3xl:h-[480px] 4xl:h-[560px] relative flex justify-center py-24 bg-black">
-        <Image
-          src={`${process.env.STRAPI_BASE_URL}${footerImage}`}
-          alt="footer"
-          width={2000}
-          height={400}
-          quality={100}
-          className="w-full h-full object-cover absolute left-0 top-0 opacity-75"
-        />
-        <div className="max-w-[1920px] px-5 md:px-40 flex flex-col items-center justify-center gap-2 z-10">
-          <h2 className="text-center font-semibold text-4xl md:text-5xl text-white mb-2">
-            {header}
-          </h2>
-          <p className="text-center md:text-start text-md md:text-lg text-white mb-8">
-            {description}
-          </p>
-          <div className="relative h-fit w-full border-b border-white">
-            <input
-              className="w-[calc(100%-5rem)] bg-transparent pb-3 pl-8 text-white placeholder:text-white outline-none"
-              placeholder="Email address"
-            />
-            <LuMail className="absolute left-0 top-0 text-2xl text-white" />
-            <button className="w-16 absolute right-0 top-0 font-semibold text-white">
-              Sign up
-            </button>
-          </div>
-        </div>
-      </div>
+      <FooterNewsletter
+        footerImage={footerImage}
+        header={header}
+        description={description}
+      />
       <div className="h-fit w-full bg-black-nav pb-8 pt-12 flex justify-center">
         <div className="w-full max-w-[1920px] px-5 md:px-40">
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-6">

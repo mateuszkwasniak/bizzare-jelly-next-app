@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
@@ -18,7 +19,6 @@ export default function MobileMenu({
   setOpen: React.Dispatch<SetStateAction<boolean>>;
 }) {
   const pathname = usePathname();
-  console.log(pathname);
 
   const jwt = useAuthState((state) => state.auth.jwt);
 

@@ -1,7 +1,6 @@
 import LoginForm from "./components/LoginForm";
 import Image from "next/image";
 import { Metadata } from "next";
-
 import { fetchSignInPageDetails } from "@/utils/strapi/get";
 import AnimateWrapper from "@/app/components/layout/root/AnimateWrapper";
 

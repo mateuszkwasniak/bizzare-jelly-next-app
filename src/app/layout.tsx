@@ -4,7 +4,7 @@ import { inter } from "@/fonts/fonts";
 import Navbar from "@/app/components/layout/root/Navbar";
 import { refreshAuthState } from "@/app/actions/auth";
 import AuthController from "./components/controller/AuthController";
-import Footer from "./components/layout/root/Footer ";
+import Footer from "./components/layout/root/Footer";
 
 export const metadata: Metadata = {
   title: "Bizzare Jelly",
