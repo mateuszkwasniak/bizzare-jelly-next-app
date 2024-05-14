@@ -44,7 +44,7 @@ export default async function RegisterPage() {
             />
           </div>
           <div className="hidden md:block md:w-1/2" />
-          <div className="max-w-[960px] md:min-h-[calc(100vh-76px)] md:self-end px-10 md:pl-16 2xl:pl-32 pb-10 pt-20 md:pt-0 flex-1">
+          <div className="max-w-[960px] md:min-h-[calc(100vh-76px)] md:self-end px-4 md:pl-16 2xl:pl-32 pb-10 pt-20 md:pt-0 flex-1">
             <h2 className="text-4xl mb-6 md:mt-48 font-medium text-center md:text-start">
               Sign up
             </h2>
