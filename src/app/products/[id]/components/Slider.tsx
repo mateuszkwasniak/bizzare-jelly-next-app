@@ -44,21 +44,21 @@ export default function Slider({
               alt="slide"
               className="w-full h-full object-cover"
             />
-            <button
-              onClick={previousImage}
-              className="w-10 h-10 absolute left-5 top-[50%] translate-y-[-50%] rounded-full flex items-center justify-center bg-white shadow-custom"
-            >
-              <LuArrowLeft className="text-xl" />
-            </button>
-            <button
-              onClick={nextImage}
-              className="w-10 h-10 absolute right-5 top-[50%] translate-y-[-50%] rounded-full flex items-center justify-center bg-white shadow-custom"
-            >
-              <LuArrowRight className="text-xl" />
-            </button>
           </motion.div>
         );
       })}
+      <button
+        onClick={previousImage}
+        className="w-10 h-10 absolute left-5 top-[50%] translate-y-[-50%] rounded-full flex items-center justify-center bg-white shadow-custom"
+      >
+        <LuArrowLeft className="text-xl" />
+      </button>
+      <button
+        onClick={nextImage}
+        className="w-10 h-10 absolute right-5 top-[50%] translate-y-[-50%] rounded-full flex items-center justify-center bg-white shadow-custom"
+      >
+        <LuArrowRight className="text-xl" />
+      </button>
     </div>
   );
 }
