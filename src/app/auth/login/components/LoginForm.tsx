@@ -143,7 +143,7 @@ export default function LoginForm() {
   return (
     <>
       <form
-        className="flex flex-col gap-8 justify-center md:w-[65%]"
+        className="flex flex-col gap-8 justify-center xl:w-[65%]"
         onSubmit={onFormSubmit}
       >
         <p className="text-center md:text-start">
@@ -221,16 +221,16 @@ export default function LoginForm() {
         </p>
       </form>
       <div className="flex flex-col items-center md:items-start">
-        <div className="w-full my-6 flex items-center justify-center md:justify-start gap-5 text-gray-text">
-          <div className="h-[1px] w-16 bg-gray-border" />
+        <div className="w-full my-6 flex items-center justify-center md:justify-start gap-5 text-black-nav md:text-gray-text">
+          <div className="h-[1px] w-16 bg-black-nav md:bg-gray-border" />
           or
-          <div className="h-[1px] w-16 bg-gray-border" />
+          <div className="h-[1px] w-16 bg-black-nav md:bg-gray-border" />
         </div>
         <button
           onClick={() => googleSignIn()}
-          className="w-full ml-0 md:ml-16 md:w-14 h-14 relative flex items-center justify-center border border-gray-border rounded-full"
+          className="ml-0 md:ml-12 py-4 px-16 md:px-4 md:w-20 h-20 relative flex items-center justify-center border border-black-nav md:border-gray-border rounded-full bg-black-header text-white"
         >
-          <GrGoogle className="text-4xl" />
+          <GrGoogle className="text-4xl text-white" />
         </button>
       </div>
     </>
