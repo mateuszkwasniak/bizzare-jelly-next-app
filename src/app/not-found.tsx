@@ -25,9 +25,10 @@ export default function NotFoundPage() {
           </p>
           <Link
             href="/"
+            prefetch={false}
             className="w-fit rounded-lg flex items-center justify-center text-center text-base xl:text-sm 2xl:text-base px-6 py-2 xl:px-14 xl:py-3 text-white bg-black-nav hover:bg-slate-800 transition-all duration-[0.3s] shadow-custom "
           >
-            Go Back
+            Back Home
           </Link>
         </div>
       </main>
