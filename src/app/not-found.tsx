@@ -1,8 +1,8 @@
 import React from "react";
-import DefaultButton from "./components/customizable/DefaultButton";
 import Image from "next/image";
 import AnimateWrapper from "./components/layout/root/AnimateWrapper";
 import notFound from "../../public/not_found.png";
+import Link from "next/link";
 
 export default function NotFoundPage() {
   return (
@@ -23,12 +23,12 @@ export default function NotFoundPage() {
           <p className="mb-4 text-xl text-black-nav text-center md:text-start">
             Breath, eat your jelly & try again.
           </p>
-          <DefaultButton
-            variant="link"
+          <Link
             href="/"
-            text={"Go Back"}
-            className="!w-fit"
-          />
+            className="w-fit rounded-lg flex items-center justify-center text-center text-base xl:text-sm 2xl:text-base px-6 py-2 xl:px-14 xl:py-3 text-white bg-black-nav hover:bg-slate-800 transition-all duration-[0.3s] shadow-custom "
+          >
+            Go Back
+          </Link>
         </div>
       </main>
     </AnimateWrapper>
