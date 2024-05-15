@@ -23,13 +23,12 @@ export default function NotFoundPage() {
           <p className="mb-4 text-xl text-black-nav text-center md:text-start">
             Breath, eat your jelly & try again.
           </p>
-          <Link
+          <a
             href="/"
-            prefetch={false}
             className="w-fit rounded-lg flex items-center justify-center text-center text-base xl:text-sm 2xl:text-base px-6 py-2 xl:px-14 xl:py-3 text-white bg-black-nav hover:bg-slate-800 transition-all duration-[0.3s] shadow-custom "
           >
             Back Home
-          </Link>
+          </a>
         </div>
       </main>
     </AnimateWrapper>
