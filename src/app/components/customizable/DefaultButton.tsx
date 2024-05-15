@@ -21,7 +21,7 @@ export default function DefaultButton({
   loading?: boolean;
   disabled?: boolean;
 }) {
-  const classes = `rounded-lg flex items-center justify-center text-center text-xs xl:text-sm 2xl:text-base px-6 py-2 xl:px-14 xl:py-3 text-white bg-black-nav hover:bg-slate-800 transition-all duration-[0.3s] shadow-custom ${
+  const classes = `rounded-lg flex items-center justify-center text-center text-base xl:text-sm 2xl:text-base px-6 py-2 xl:px-14 xl:py-3 text-white bg-black-nav hover:bg-slate-800 transition-all duration-[0.3s] shadow-custom ${
     className ? className : ""
   }`;
 

@@ -5,6 +5,7 @@ import Navbar from "@/app/components/layout/root/Navbar";
 import { refreshAuthState } from "@/app/actions/auth";
 import AuthController from "./components/controller/AuthController";
 import Footer from "./components/layout/root/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Bizzare Jelly",
@@ -22,6 +23,16 @@ export default async function ProductsLayout({
     <html lang="en">
       <AuthController auth={auth} />
       <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            style: {
+              background: "black",
+              color: "white",
+              fontSize: "18px",
+            },
+          }}
+        />
         <Navbar />
         <div className="mt-10 md:mt-[76px] w-full grow">{children}</div>
         <Footer />

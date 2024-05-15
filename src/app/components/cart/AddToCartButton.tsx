@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import DefaultButton from "../customizable/DefaultButton";
 import { useCartState } from "@/hooks/store/cart";
 import ProductCountButton from "./ProductCountButton";
+import toast, { Toaster } from "react-hot-toast";
+
+const notify = () => toast("Added to cart");
 
 export default function AddToCartButton({
   product,
@@ -26,16 +29,19 @@ export default function AddToCartButton({
   };
 
   const button = (
-    <DefaultButton
-      text="Add to Cart"
-      onClick={(e) => {
-        e.preventDefault();
-        addToCart(cartProduct);
-      }}
-      className={`px-2 py-1.5 rounded border border-gray-deep flex gap-2.5 ${
-        className ? className : ""
-      }`}
-    />
+    <>
+      <DefaultButton
+        text="Add to Cart"
+        onClick={(e) => {
+          e.preventDefault();
+          addToCart(cartProduct);
+          notify();
+        }}
+        className={`px-2 py-1.5 rounded border border-gray-deep flex gap-2.5 ${
+          className ? className : ""
+        }`}
+      />
+    </>
   );
 
   if (withCounter) {
@@ -50,6 +56,6 @@ export default function AddToCartButton({
       </div>
     );
   } else {
-    return button;
+    return <>{button}</>;
   }
 }
